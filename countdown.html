@@ -1,0 +1,20 @@
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+  
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function()
+	{
+		var refreshId = setInterval(function() 
+		{
+			$('#timeval').load('script.php');
+		}, 1000);
+	});
+</script>
+
+<table><tr><td align="centre"><font size="4" color="white" face="Bauhaus 93">
+<div id="timeval">Countdown is loading....</div>
+
+</font></td></tr><table>
